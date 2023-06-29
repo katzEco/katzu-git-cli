@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASE_SOURCE='.'
+BASE_SOURCE='~/.config/.kgit'
 HOME_SOURCE="${BASE_SOURCE}/scripts"
 
 source ${HOME_SOURCE}/function.sh
