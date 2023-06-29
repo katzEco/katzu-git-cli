@@ -15,7 +15,7 @@ if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
 
   # export alias kgit="~/.config/.kgit/tui.sh"
   cp ~/.zshrc ~/.zshrc-kgit-bak
-  echo -e '\nalias kg="~/.config/.k-lazy/script.sh"' >> ~/.zshrc
+  echo -e '\nalias kg="~/.config/.kgit/run.sh"' >> ~/.zshrc
   sleep 1 &
   wait
   clear

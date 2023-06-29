@@ -12,6 +12,9 @@ if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
   rm -rf katzu-git-cli
   rm install.sh
 
+  chmod +x *
+  chmod +x src/*
+
   clear
   echo "This package is successfully upgraded!"
   echo "Please enjoy :) - dethM"
