@@ -18,9 +18,9 @@ if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
   echo -e '\nalias kg="~/.config/.k-lazy/script.sh"' >> ~/.zshrc
   sleep 1 &
   wait
-  # clear
+  clear
   
-  echo "bst is installed to your console"
+  echo "'kg' is installed to your console"
   echo "please run 'source ~/.zshrc' first"
   echo "and then try run 'kg' in your zsh"
 fi
