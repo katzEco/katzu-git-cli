@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-HOME_SOURCE='./scripts'
+BASE_SOURCE='.'
+HOME_SOURCE="${BASE_SOURCE}/scripts"
 
 source ${HOME_SOURCE}/function.sh
 
@@ -28,6 +29,8 @@ else
     else
       source ${HOME_SOURCE}/push.sh $(listArg "2" "$@")
     fi
+  elif [[ $1 =~ ^[update]+$ ]]; then
+    source ${BASE_SOURCE}/update.sh
   elif [[ $1 =~ ^[help]+$ || $1 =~ ^[h]+$ ]]; then
     source ${HOME_SOURCE}/help.sh $1
   else

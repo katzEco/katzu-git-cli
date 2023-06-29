@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -p "Do you want to install this package? [y/N] : " option
+read -p "Do you want to update this package? [y/N] : " option
 
 if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
   cd ~/.config/.kgit
