@@ -22,6 +22,12 @@ else
     else
       source $HOME_SOURCE/commit.sh $(listArg "2" "$@")
     fi
+  elif [[ $1 =~ ^[push]+$ || $1 =~ ^[p]+$ ]]; then
+    if [[ -z $2 ]]; then
+      source ${HOME_SOURCE}/push.sh ''
+    else
+      source ${HOME_SOURCE}/push.sh $(listArg "2" "$@")
+    fi
   elif [[ $1 =~ ^[help]+$ || $1 =~ ^[h]+$ ]]; then
     source ${HOME_SOURCE}/help.sh $1
   else
