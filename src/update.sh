@@ -10,7 +10,7 @@ if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
   mv * ~/.config/.kgit
   cd ~/.config/.kgit
   rm -rf katzu-git-cli
-  rm installer.sh
+  rm install.sh
 
   clear
   echo "This package is successfully upgraded!"

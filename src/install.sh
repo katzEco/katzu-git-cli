@@ -11,7 +11,7 @@ if [[ $option =~ ^[y]+$ || $option =~ ^[Y]+$ ]]; then
   mv * ~/.config/.kgit
   cd ~/.config/.kgit
   rm -rf katzu-git-cli
-  rm installer.sh
+  rm install.sh
 
   # export alias kgit="~/.config/.kgit/tui.sh"
   cp ~/.zshrc ~/.zshrc-kgit-bak
