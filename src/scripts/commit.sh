@@ -6,4 +6,6 @@ if [[ -z $1 && -z $2 && -z $3 ]]; then
   else
     git commit -m "$1<$2>: $3"
   fi
+else
+  echo "Not enough argument"
 fi
